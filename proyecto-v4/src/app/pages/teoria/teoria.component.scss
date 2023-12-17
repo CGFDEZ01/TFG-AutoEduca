@@ -1,0 +1,231 @@
+.dropdown-sectores {
+    background-color: #81bfbc;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+  
+  .dropdown {
+    margin: 0 10px;
+  }
+  
+  .dropdown label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .dropdown select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0 2px 3px #f0f0f0;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  //Swiper
+  .swiper-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 300px;
+    margin-bottom: 20px; /* Asegura espacio adicional debajo del contenedor */
+  }
+  
+  .swiper-slide {
+    flex: 1;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    height: 300px; /* Altura fija para cada slide */
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; /* Asegura espacio debajo de cada tarjeta */
+  }
+  
+  .card img {
+    width: 100%;
+    height: 120px; /* Altura fija para la imagen */
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye el contenido de manera uniforme */
+    flex-grow: 1; /* Ocupa todo el espacio restante después de la imagen */
+  }
+  
+  .card-content h3, .card-content p {
+    margin-bottom: 5px; /* Reduce los márgenes para ahorrar espacio */
+  }
+  
+  .card-content button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+  }
+  .card-content button:hover{
+    background-color: #255026;
+    cursor: pointer;
+  }
+
+/* Estilos para el sector de temario en vídeo */
+.temario-videos h2 {
+    text-align: center;
+  }
+  
+  .temario-videos p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .tema-section {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .tema-section h1 {
+    margin-bottom: 20px;
+  }
+  
+  .tema-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    justify-content: center;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  
+  .tema-card {
+    background-color: #81bfbc; /* Verde similar al de la imagen */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .tema-card:hover {
+    transform: scale(1.05); /* Efecto de escalado al pasar el cursor */
+  }
+  
+  .tema-card h2 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .tema-card span {
+    font-size: 0.8rem;
+    background-color: #ffffff; /* Fondo blanco para la etiqueta */
+    color: #81bfbc; /* Texto verde para que contraste con el fondo blanco */
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+    /* Estilos para el footer */
+    footer {
+        background-color: #4d4d4d;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+      }
+    
+      .footer-columns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%; /* Asegura que las columnas ocupen el ancho completo */
+      }
+      
+      .footer-column {
+        flex: 1;
+        padding: 20px;
+        min-width: 150px; /* Ajusta según tus necesidades */
+      }
+    
+      .footer-column img {
+        width: auto; /* mantiene la relación de aspecto */
+        height: 200px; /* ajusta esto a la altura que desees */
+        margin-bottom: 20px; /* añade algo de espacio debajo del logo */
+      }
+      
+      .footer-column h3 {
+        margin-bottom: 10px;
+        padding-top: 20px;
+      }
+      
+      .footer-column ul {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 30px;
+      }
+      
+      .footer-column ul li a {
+        color: white;
+        text-decoration: none;
+        margin-bottom: 5px;
+        display: block;
+      }
+      
+      .footer-column a.social-icon {
+        display: inline-block;
+        margin-right: 10px;
+        margin-top: 40px;
+        /* Aquí puedes añadir más estilos para tus íconos de redes sociales */
+      }
+      .social-icon {
+        font-size: 30px; /* o el tamaño que prefieras */
+        color: #fff; /* o cualquier otro color que prefieras */ 
+      }
+      
+      /* Si deseas que cambien de color al pasar el mouse */
+      .social-icon:hover {
+        color: #ddd; /* o cualquier otro color que prefieras */
+      }
+    
+      .footer-copy {
+        margin-top: 20px; /* Espacio por encima del texto de derechos de autor */
+        text-align: center; /* Alinea el texto al centro */
+        width: 100%; /* Ocupa el ancho completo del footer */
+      }
+      
+      /* Ajustes de respuesta para pantallas pequeñas */
+      @media (max-width: 768px) {
+        .footer-column {
+          flex-basis: 100%; /* Cada columna ocupa el ancho completo en pantallas pequeñas */
+          text-align: center;
+          margin-bottom: 20px;
+        }
+      
+        footer p {
+          flex-basis: 100%;
+          text-align: center;
+        }
+        .footer-columns {
+          flex-direction: column; /* Organiza las columnas en una pila vertical en pantallas pequeñas */
+        }
+      }  
+    

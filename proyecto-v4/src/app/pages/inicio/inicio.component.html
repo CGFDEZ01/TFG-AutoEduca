@@ -1,0 +1,110 @@
+<!-- inicio.component.html -->
+
+<app-header></app-header>
+
+<div class="banner-principal">
+    <img src="assets/banner1.jpg" alt="Banner de la Autoescuela">
+    <div class="texto-banner">
+        <h1>Aprende a conducir con nosotros</h1>
+        <button (click)="navigateToInscripcion()">Inscríbete Ahora</button>
+        <p>Encuentra todos los trucos y consejos<br>para obtener el carnet de conducir<br>con más de 2000 vídeos explicativos</p>
+    </div>
+</div>
+
+<div class="seccion-doble">
+    <div class="teoria">
+        <h2>La Teoría</h2>
+        <ul>
+            <li>Con todo el temario explicado en 350 vídeos.</li>
+            <li>Con más de 3.500 vídeos explicando trucos y consejos.</li>
+            <li>Con las 630 preguntas de examen de la DGT más importantes.</li>
+        </ul>
+        <button (click)="navigateToTeoria()">Curso Teórico Online</button>
+    </div>
+    <div class="practica">
+        <h2>La Práctica</h2>
+        <ul>
+            <li>Con los vídeos de los Recorridos en las Zonas de Examen.</li>
+            <li>Con todas las maniobras y faltas de examen de la DGT.</li>
+            <li>Gana confianza y seguridad ahorrando tiempo en tus prácticas.</li>
+        </ul>
+        <button (click)="navigateToPractica()">Curso Práctico Online</button>
+    </div>
+</div>
+
+<div class="opiniones">
+  <h1>Opiniones</h1>
+  <div class="swiper-container opiniones-swiper">
+    <div class="swiper-wrapper">
+      <!-- Cada opinión es un swiper-slide -->
+      <div class="swiper-slide opinion">
+        <p>"Gracias a AutoEduca pasé mi examen teórico sin problemas."</p>
+        <p>- Carlos Gutiérrez</p>
+      </div>
+      <div class="swiper-slide opinion">
+        <p>"AutoEduca tiene una cantidad de vídeos inmensa, me han ayudado mucho a pasar el examen sin problemas"</p>
+        <p>- Carlos Gutiérrez</p>
+      </div>
+      <div class="swiper-slide opinion">
+        <p>"AutoEduca tiene una cantidad de vídeos inmensa, me han ayudado mucho a pasar el examen sin problemas"</p>
+        <p>- Carlos Gutiérrez</p>
+      </div>
+      <div class="swiper-slide opinion">
+        <p>"AutoEduca tiene una cantidad de vídeos inmensa, me han ayudado mucho a pasar el examen sin problemas"</p>
+        <p>- Carlos Gutiérrez</p>
+      </div>
+      <div class="swiper-slide opinion">
+        <p>"AutoEduca tiene una cantidad de vídeos inmensa, me han ayudado mucho a pasar el examen sin problemas"</p>
+        <p>- Carlos Gutiérrez</p>
+      </div>
+      <!-- Repite la estructura de arriba para más opiniones -->
+    </div>
+  </div>
+</div>
+
+<div class="por-que-nosotros">
+    <h2>¿Por qué elegirnos?</h2>
+    <p>Ofrecemos una metodología de enseñanza moderna y efectiva, diseñada para que obtengas tu licencia de conducir de manera rápida y segura. Nuestros cursos están actualizados con las últimas normativas de tránsito y utilizamos tecnología de punta para proporcionar simulaciones realistas y un aprendizaje interactivo. Nuestro equipo de instructores certificados está comprometido con tu éxito y proporcionará orientación personalizada en cada paso del camino.</p>
+    <button (click)="navigateToContacto()">Contacto</button>  
+</div>
+
+<footer>
+  <div class="footer-columns">
+    <div class="footer-column">
+      <img src="/assets/Logotipo-preview.png" alt="Logotipo de la Autoescuela" />
+    </div>
+    <div class="footer-column">
+      <h3>Secciones</h3>
+      <ul>
+        <li><a href="/inicio">Inicio</a></li>
+        <li><a href="/teoria">Teoría</a></li>
+        <li><a href="/practica">Práctica</a></li>
+        <li><a href="/contacto">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Legal</h3>
+      <ul>
+        <li><a href="/privacidad">Política de Privacidad</a></li>
+        <li><a href="/terminos">Términos de Servicio</a></li>
+        <li><a href="/cookies">Política de Cookies</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Síguenos</h3>
+      <a href="https://www.facebook.com" class="social-icon">
+        <i class="fab fa-facebook-square"></i>
+      </a>
+      <a href="https://twitter.com" class="social-icon">
+        <i class="fab fa-twitter-square"></i>
+      </a>
+      <a href="https://www.instagram.com" class="social-icon">
+        <i class="fab fa-instagram-square"></i>
+      </a>
+      <a href="https://es.linkedin.com" class="social-icon">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>    
+  </div>
+  <p class="footer-copy">&copy; 2023 AutoEduca<br> Todos los derechos reservados.</p>
+</footer>

@@ -1,0 +1,183 @@
+/* Reset some basic elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Esto asegura que el body no tenga un ancho mayor que la pantalla */
+  overflow-x: hidden; /* Esto previene el desbordamiento horizontal */
+}
+
+h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*Estilos para el formulario*/
+  .formulario-contacto {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .titulo-formulario {
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #20505e;
+  }
+  
+  .form-group textarea {
+    height: 150px; /* Ajusta esto según tus necesidades */
+  }
+  
+  button {
+    background-color: #81bfbc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #1b4a5a;
+  }
+
+ /* Estilos para el footer */
+ footer {
+  background-color: #4d4d4d;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  width: 100%;
+  margin-top: 298px;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%; /* Asegura que las columnas ocupen el ancho completo */
+}
+
+.footer-column {
+  flex: 1;
+  padding: 20px;
+  min-width: 150px; /* Ajusta según tus necesidades */
+}
+
+.footer-column img {
+  width: auto; /* mantiene la relación de aspecto */
+  height: 200px; /* ajusta esto a la altura que desees */
+  margin-bottom: 20px; /* añade algo de espacio debajo del logo */
+}
+
+.footer-column h3 {
+  margin-bottom: 10px;
+  padding-top: 20px;
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.footer-column a.social-icon {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 40px;
+  /* Aquí puedes añadir más estilos para tus íconos de redes sociales */
+}
+.social-icon {
+  font-size: 30px; /* o el tamaño que prefieras */
+  color: #fff; /* o cualquier otro color que prefieras */ 
+}
+
+/* Si deseas que cambien de color al pasar el mouse */
+.social-icon:hover {
+  color: #ddd; /* o cualquier otro color que prefieras */
+}
+
+.footer-copy {
+  margin-top: 20px; /* Espacio por encima del texto de derechos de autor */
+  text-align: center; /* Alinea el texto al centro */
+  width: 100%; /* Ocupa el ancho completo del footer */
+}
+
+/* Ajustes de respuesta para pantallas pequeñas */
+@media (max-width: 768px) {
+  .footer-column {
+    flex-basis: 100%; /* Cada columna ocupa el ancho completo en pantallas pequeñas */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  footer p {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .footer-columns {
+    flex-direction: column; /* Organiza las columnas en una pila vertical en pantallas pequeñas */
+  }
+}  
+  /* Responsive design adjustments */
+  @media (max-width: 768px) {
+    header nav a {
+      display: block;
+      margin-top: 5px;
+    }
+  }
+  /* Responsive design adjustments */
+@media (max-width: 768px) {
+  header img {
+    height: 40px; /* Más pequeño en dispositivos móviles */
+  }
+}
+@media (max-width: 768px) {
+  .menu-button {
+    display: block; /* Mostrar el botón de menú en pantallas pequeñas */
+  }
+
+  .main-nav {
+    display: none; /* Ocultar la navegación normal */
+    flex-direction: column; /* Opcional, para un diseño de menú vertical */
+  }
+
+  .main-nav a {
+    padding: 10px; /* Ajustar el espaciado para los enlaces del menú */
+    border-bottom: 1px solid white; /* Opcional, para separar los enlaces */
+  }
+}   

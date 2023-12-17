@@ -1,0 +1,59 @@
+<!--contacto.component.html-->
+
+<app-header></app-header>
+<div class="formulario-contacto">
+    <h2 class="titulo-formulario">Contáctenos</h2>
+    <form>
+        <div class="form-group">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+            <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+        </div>
+        <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+            <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" rows="4" required></textarea>
+        </div>
+        <button type="submit">Enviar Mensaje</button>
+    </form>
+</div>
+<footer>
+    <div class="footer-columns">
+      <div class="footer-column">
+        <img src="/assets/Logotipo-preview.png" alt="Logotipo de la Autoescuela" />
+      </div>
+      <div class="footer-column">
+        <h3>Secciones</h3>
+        <ul>
+          <li><a href="/inicio">Inicio</a></li>
+          <li><a href="/teoria">Teoría</a></li>
+          <li><a href="/practica">Práctica</a></li>
+          <li><a href="/contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="/privacidad">Política de Privacidad</a></li>
+          <li><a href="/terminos">Términos de Servicio</a></li>
+          <li><a href="/cookies">Política de Cookies</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Síguenos</h3>
+        <a href="https://www.facebook.com" class="social-icon">
+          <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="https://twitter.com" class="social-icon">
+          <i class="fab fa-twitter-square"></i>
+        </a>
+        <a href="https://www.instagram.com" class="social-icon">
+          <i class="fab fa-instagram-square"></i>
+        </a>
+        <a href="https://es.linkedin.com" class="social-icon">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>    
+    </div>
+    <p class="footer-copy">&copy; 2023 AutoEduca<br> Todos los derechos reservados.</p>
+  </footer>
